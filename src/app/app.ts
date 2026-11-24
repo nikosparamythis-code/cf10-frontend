@@ -7,7 +7,13 @@ import { Step5EventBind } from './components/step5-event-bind/step5-event-bind';
 import { Person } from './shared/interfaces/person';
 
 @Component({
-  imports: [Step2PersonTable, Step3PersonTableInput, Step4ForDirective, Step5EventBind],
+  imports: [
+    Step2PersonTable,
+    Step3PersonTableInput,
+    Step4ForDirective,
+    Step5EventBind,
+    RouterOutlet,
+  ],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
