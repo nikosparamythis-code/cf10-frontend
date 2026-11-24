@@ -1,8 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Step2PersonTable } from './components/step2-person-table/step2-person-table';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [Step2PersonTable],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
