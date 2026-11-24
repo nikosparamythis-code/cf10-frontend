@@ -14,5 +14,6 @@ export class Step7ListGroupMenu {
     { text: 'Step4 @for directive', routerLink: 'for-directive-example' },
     { text: 'Step5 Event Bind', routerLink: 'event-bind-example' },
     { text: 'Step8 Simple Data Table', routerLink: 'simple-data-table-example' },
+    { text: 'Step9 Component Output', routerLink: 'component-output-example' },
   ];
 }

@@ -5,6 +5,7 @@ import { Step2PersonTable } from './components/step2-person-table/step2-person-t
 import { Step3PersonTableInput } from './components/step3-person-table-input/step3-person-table-input';
 import { Step5EventBind } from './components/step5-event-bind/step5-event-bind';
 import { Step8SimpleDataTableShow } from './components/step8-simple-data-table-show/step8-simple-data-table-show';
+import { Step9ComponentOutput } from './components/step9-component-output/step9-component-output';
 
 export const routes: Routes = [
   {
@@ -31,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'simple-data-table-example',
     component: Step8SimpleDataTableShow,
+  },
+  {
+    path: 'component-output-example',
+    component: Step9ComponentOutput,
   },
   {
     path: '',

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Person } from '../../shared/interfaces/person';
 import { sortBy } from 'lodash-es';
 
@@ -10,6 +10,7 @@ import { sortBy } from 'lodash-es';
 })
 export class Step8SimpleDataTable {
   @Input() data: Person[] | undefined;
+  @Output() personClicked = new EventEmitter<Person>();
 
   sortOrder = {
     firstname: 'none',
@@ -30,5 +31,9 @@ export class Step8SimpleDataTable {
         this.sortOrder[key as keyof Person] == 'none';
       }
     }
+  }
+
+  onPersonClicked(person: Person) {
+    this.personClicked.emit(person);
   }
 }
