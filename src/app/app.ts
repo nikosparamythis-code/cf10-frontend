@@ -9,4 +9,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('angular-introduction');
+  //Step 1 One way Binding
+  name = 'Nikos';
+
+  user = {
+    firstname: 'Ringo',
+    lastname: 'Star',
+    email: 'beatles@music.com',
+  };
 }
