@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "gitdeploy": "ng deploy --base-href=https://nikosparamythis-code.github.io/cf10-frontend/"
   },
   "private": true,
   "packageManager": "npm@11.20.0",
