@@ -26,4 +26,10 @@ export class App {
     lastname: 'Harrison',
     email: 'beatles@music.com',
   };
+
+  person2: Person = {
+    firstname: 'Paul',
+    lastname: 'McCartney',
+    email: 'beatles@music.com',
+  };
 }
