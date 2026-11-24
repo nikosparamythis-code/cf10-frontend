@@ -1,0 +1,7 @@
+<div>FOR Directive</div>
+
+<div class="d-flex flex-wrap text-nowrap gap-4">
+  @for (p of persons; track p) {
+    <app-step3-person-table-input [person]="p"></app-step3-person-table-input>
+  }
+</div>
