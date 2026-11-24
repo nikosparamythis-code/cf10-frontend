@@ -64,6 +64,12 @@
 } @else {
   <!-- Add child Step6 -->
   <div class="container mt-2">
-    <router-outlet></router-outlet>
+    <app-navbar></app-navbar>
+    <div class="d-flex flex-row gap-2 mt-3">
+      <app-step7-list-group-menu class="w-25"></app-step7-list-group-menu>
+      <div class="flex-grow-1 p-2 w-75">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
 }

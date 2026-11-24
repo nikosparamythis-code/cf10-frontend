@@ -5,6 +5,8 @@ import { Step3PersonTableInput } from './components/step3-person-table-input/ste
 import { Step4ForDirective } from './components/step4-for-directive/step4-for-directive';
 import { Step5EventBind } from './components/step5-event-bind/step5-event-bind';
 import { Person } from './shared/interfaces/person';
+import { Navbar } from './components/navbar/navbar';
+import { Step7ListGroupMenu } from './components/step7-list-group-menu/step7-list-group-menu';
 
 @Component({
   imports: [
@@ -13,6 +15,8 @@ import { Person } from './shared/interfaces/person';
     Step4ForDirective,
     Step5EventBind,
     RouterOutlet,
+    Step7ListGroupMenu,
+    Navbar,
   ],
   selector: 'app-root',
   styleUrl: './app.css',
