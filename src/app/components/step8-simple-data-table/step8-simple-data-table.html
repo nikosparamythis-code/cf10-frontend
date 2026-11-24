@@ -1,0 +1,18 @@
+<table class="table table-bordered table-stripped text-wrap">
+  <thead>
+    <tr>
+      <th role="button" (click)="sortData('firstname')">First Name</th>
+      <th role="button" (click)="sortData('lastname')">Last Name</th>
+      <th role="button" (click)="sortData('email')">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (row of data; track row) {
+      <tr class="align-middle">
+        <td>{{ row.firstname }}</td>
+        <td>{{ row.lastname }}</td>
+        <td>{{ row.email }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
