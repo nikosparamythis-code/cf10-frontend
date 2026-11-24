@@ -1,67 +1,69 @@
-<div class="container mt-4">
-  <div class="d-flex gap-5 align-items-center">
-    <div class="bg-info p-2">
-      <h1>Coding Factory</h1>
-      <h2>Introduction to Angular</h2>
-    </div>
-    <div class="bg-success p-2 text-light">
-      <h3>Welcome to Angular</h3>
-      <p>Hello <strong>All!</strong> Nice to meet you!</p>
+@if (!doNotShowRest) {
+  <div class="container mt-4">
+    <div class="d-flex gap-5 align-items-center">
+      <div class="bg-info p-2">
+        <h1>Coding Factory</h1>
+        <h2>Introduction to Angular</h2>
+      </div>
+      <div class="bg-success p-2 text-light">
+        <h3>Welcome to Angular</h3>
+        <p>Hello <strong>All!</strong> Nice to meet you!</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container mt-4">
-  <h3>From App Component</h3>
-  <p>
-    Hello <strong> {{ name }}</strong>
-  </p>
+  <div class="container mt-4">
+    <h3>From App Component</h3>
+    <p>
+      Hello <strong> {{ name }}</strong>
+    </p>
 
-  <table class="table table-bordered w-50">
-    <tr>
-      <td class="fw-semibold">First Name</td>
-      <td class="ps-2">{{ user.firstname }}</td>
-    </tr>
-    <tr>
-      <td class="fw-semibold">Last Name</td>
-      <td class="ps-2">{{ user.lastname }}</td>
-    </tr>
-    <tr>
-      <td class="fw-semibold">Email</td>
-      <td class="ps-2">{{ user.email }}</td>
-    </tr>
-  </table>
-</div>
+    <table class="table table-bordered w-50">
+      <tr>
+        <td class="fw-semibold">First Name</td>
+        <td class="ps-2">{{ user.firstname }}</td>
+      </tr>
+      <tr>
+        <td class="fw-semibold">Last Name</td>
+        <td class="ps-2">{{ user.lastname }}</td>
+      </tr>
+      <tr>
+        <td class="fw-semibold">Email</td>
+        <td class="ps-2">{{ user.email }}</td>
+      </tr>
+    </table>
+  </div>
 
-<!-- Add child Step2-person-table -->
+  <!-- Add child Step2-person-table -->
 
-<div class="container mt-2 bg-info">
-  <app-step2-person-table> </app-step2-person-table>
-</div>
+  <div class="container mt-2 bg-info">
+    <app-step2-person-table> </app-step2-person-table>
+  </div>
 
-<hr />
+  <hr />
 
-<!-- Add child Step3-person-table-input -->
+  <!-- Add child Step3-person-table-input -->
 
-<div class="container mt-2 bg-success">
-  <app-step3-person-table-input [person]="person1"></app-step3-person-table-input>
+  <div class="container mt-2 bg-success">
+    <app-step3-person-table-input [person]="person1"></app-step3-person-table-input>
 
-  <app-step3-person-table-input [person]="person2"></app-step3-person-table-input>
-</div>
+    <app-step3-person-table-input [person]="person2"></app-step3-person-table-input>
+  </div>
 
-<!-- Add child Step4-for-diective -->
-<div class="container mt-2">
-  <h3>From Step4 component</h3>
-  <app-step4-for-directive></app-step4-for-directive>
-</div>
+  <!-- Add child Step4-for-diective -->
+  <div class="container mt-2">
+    <h3>From Step4 component</h3>
+    <app-step4-for-directive></app-step4-for-directive>
+  </div>
 
-<!-- Add child Step5-event-bind -->
-<div class="container">
-  <h3>From Step5-event-bind</h3>
-  <app-step5-event-bind> </app-step5-event-bind>
-</div>
-
-<!-- Add child Step6 -->
-<div>
-  <router-outlet></router-outlet>
-</div>
+  <!-- Add child Step5-event-bind -->
+  <div class="container">
+    <h3>From Step5-event-bind</h3>
+    <app-step5-event-bind> </app-step5-event-bind>
+  </div>
+} @else {
+  <!-- Add child Step6 -->
+  <div class="container mt-2">
+    <router-outlet></router-outlet>
+  </div>
+}

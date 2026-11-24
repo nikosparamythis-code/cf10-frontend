@@ -23,6 +23,8 @@ export class App {
   //Step 1 One way Binding
   name = 'Nikos';
 
+  doNotShowRest: boolean = true;
+
   user = {
     firstname: 'Ringo',
     lastname: 'Star',
