@@ -8,6 +8,7 @@ import { Step8SimpleDataTableShow } from './components/step8-simple-data-table-s
 import { Step9ComponentOutput } from './components/step9-component-output/step9-component-output';
 import { Step10TemplateDrivenForms } from './components/step10-template-driven-forms/step10-template-driven-forms';
 import { Step11ReactiveForms } from './components/step11-reactive-forms/step11-reactive-forms';
+import { Step12HhtpClientService } from './components/step12-hhtp-client-service/step12-hhtp-client-service';
 
 export const routes: Routes = [
   {
@@ -46,6 +47,10 @@ export const routes: Routes = [
   {
     path: 'reactive-form-example',
     component: Step11ReactiveForms,
+  },
+  {
+    path: 'http-client-service-example',
+    component: Step12HhtpClientService,
   },
   {
     path: '',
