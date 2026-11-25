@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Step11ReactiveForms } from '../step11-reactive-forms/step11-reactive-forms';
 
 @Component({
   imports: [RouterLink, RouterLinkActive],
@@ -16,5 +17,6 @@ export class Step7ListGroupMenu {
     { text: 'Step8 Simple Data Table', routerLink: 'simple-data-table-example' },
     { text: 'Step9 Component Output', routerLink: 'component-output-example' },
     { text: 'Step10 Template Forms', routerLink: 'template-driven-form' },
+    { text: 'Step11 Reactive Forms', routerLink: 'reactive-form-example' },
   ];
 }
