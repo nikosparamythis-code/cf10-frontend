@@ -41,4 +41,9 @@
   >
     Submit
   </button>
+  <div class="d-flex flex-column mt-2 gap4">
+    <app-step3-person-table-input [person]="currentPerson"></app-step3-person-table-input>
+    <app-step8-simple-data-table [data]="persons"></app-step8-simple-data-table>
+    {{ persons | json }}
+  </div>
 </div>
