@@ -15,5 +15,6 @@ export class Step7ListGroupMenu {
     { text: 'Step5 Event Bind', routerLink: 'event-bind-example' },
     { text: 'Step8 Simple Data Table', routerLink: 'simple-data-table-example' },
     { text: 'Step9 Component Output', routerLink: 'component-output-example' },
+    { text: 'Step10 Template Forms', routerLink: 'template-driven-form' },
   ];
 }
